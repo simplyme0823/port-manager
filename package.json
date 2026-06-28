@@ -1,0 +1,37 @@
+{
+  "name": "@tansui/port-manager",
+  "version": "0.1.0",
+  "private": false,
+  "packageManager": "pnpm@11.7.0",
+  "main": "dist/port-manager.js",
+  "bin": {
+    "tansui-port": "dist/port-manager.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "SKILL.md",
+    "reference.md",
+    "examples.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepack": "pnpm run build",
+    "prepublishOnly": "pnpm run build",
+    "test": "pnpm run build && node --no-warnings --experimental-strip-types --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "cac": "^7.0.0",
+    "detect-port": "^1.6.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.5"
+  }
+}
