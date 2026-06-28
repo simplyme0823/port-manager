@@ -43,6 +43,14 @@ Defaults:
 
 ## Install As A Skill
 
+This repository exposes the skill from `skills/port-manager/`, so skill installers copy only the skill docs instead of the whole npm package source.
+
+Install the skill from GitHub:
+
+```bash
+npx skills add simplyme0823/port-manager
+```
+
 Install the package globally before using the skill:
 
 ```bash

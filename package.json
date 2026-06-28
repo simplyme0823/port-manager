@@ -12,9 +12,7 @@
   },
   "files": [
     "dist",
-    "SKILL.md",
-    "reference.md",
-    "examples.md",
+    "skills",
     "README.md",
     "LICENSE"
   ],
