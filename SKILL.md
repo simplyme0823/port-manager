@@ -1,3 +1,8 @@
+---
+name: port-manager
+description: Assign or reuse a stable local port for any project path. Use when an agent needs to know which port a project can use, including monorepo subprojects; the main command prints an existing port or allocates one.
+---
+
 # Port Manager
 
 Use this skill when an agent needs to output the port a project path can use.
